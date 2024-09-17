@@ -20,25 +20,38 @@ if (operacao == "+" || operacao == "-" ||operacao == "*" || operacao == "/") {
 
     switch (operacao) {
         case "+":
+            console.log("-----------------------------------")
             console.log(num1 + " + " + num2 + " = " + adicao )
+            console.log("-----------------------------------")
             break
 
         case "-":
+            console.log("--------------------------------------")
             console.log(num1 + " - " + num2 + " = " + subtracao )
+            console.log("--------------------------------------")
             break
         
         case "*":
+            console.log("------------------------------------------")
             console.log(num1 + " X " + num2 + " = " + multiplicacao )
+            console.log("------------------------------------------")
             break
 
         case "/":
             if (num2 > 0){
+                console.log("------------------------------------")
                 console.log(num1 + " / " + num2 + " = " + divisao )
+                console.log("------------------------------------")
             }
-            else
+            else{
+                console.log("--------------------------------------------")
                 console.log("[ERRO] - o divisor não pode ser zero (0)")
+                console.log("--------------------------------------------")
             break
-    }}
+    }}}
     
-    else
-console.log("[ERRO] símbolo da operação não existe")
+    else{
+    console.log("-------------------------------------")
+    console.log("[ERRO] símbolo da operação não existe")
+    console.log("-------------------------------------")
+    }
