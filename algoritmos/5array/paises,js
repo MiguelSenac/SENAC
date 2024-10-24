@@ -1,0 +1,40 @@
+const paises = [
+    ["Brasil", 213993437],
+    ["Estados Unidos", 331002651],
+    ["China", 1439323776],
+    ["Índia", 1380004385],
+    ["Japão", 126476461],
+    ["Alemanha", 83783942],
+    ["França", 65273511],
+    ["Reino Unido", 67886011],
+    ["Itália", 60244639],
+    ["Canadá", 37742154]
+]
+
+let maior = [0][0]
+let nomeDoMaior = [0][0]
+
+let maiorOrdem = [0][0]
+
+
+for (let array = 0; array < paises.length; array++){
+    
+    for(let pais = 0; pais < paises[array].length; pais++){
+    
+
+        if (paises[array][pais] > maior){
+            maior = paises[array][pais]
+            nomeDoMaior = paises[array][0]
+        }
+
+        if(paises[array][pais] > maiorOrdem){
+            maiorOrdem = paises[array][pais]
+        }
+        console.log(maiorOrdem)
+
+       
+    }
+}
+
+console.log(maior +  " = " + nomeDoMaior )
+
